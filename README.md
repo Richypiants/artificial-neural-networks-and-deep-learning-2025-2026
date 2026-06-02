@@ -11,11 +11,11 @@ The work here represents the collective effort of team **Batch Size Matters** (M
 
 Across both challenges, our team competed against 193 teams. The final evaluations were based on the Weighted/Macro F1 Score. 
 
-| Challenge | Leaderboard | Rank | F1 Score | Total Teams |
-| :--- | :--- | :--- | :--- | :--- |
-| **Challenge 1** (Time Series) | Public | **22** | 0.93785 | 193 |
-| **Challenge 1** (Time Series) | Private | **33** | 0.95809 | 193 |
-| **Challenge 2** (Computer Vision) | Unique | **10** | 0.44890 | 193 |
+| Challenge | Leaderboard | Rank | F1 Score |
+| :--- | :--- | :--- | :--- |
+| **Challenge 1** (Time Series) | Public | **22th/193** | 0.96305 |
+| **Challenge 1** (Time Series) | Private | **33th/193** | 0.95809 |
+| **Challenge 2** (Computer Vision) | Unique | **10th/193** | 0.44890 |
 
 ---
 
@@ -45,7 +45,7 @@ We also employed **Label Smoothing** and a **Class-Weighted Cross-Entropy Loss**
 The second challenge shifted the domain to Computer Vision. The task involved analyzing microscopic tissue morphology images to predict four distinct breast cancer molecular subtypes: **Luminal A**, **Luminal B**, **HER2(+)**, and **Triple negative**.
 
 ### 🧩 Challenges
-* **Image Variance**: The dataset consisted of 1,272 tissue images of highly variable sizes.
+* **Variable Image Sizes**: The dataset consisted of 1,272 tissue images of highly variable sizes.
 * **Irrelevant Backgrounds**: Large portions of the images contained non-pathological background, requiring reliance on binary masks to locate diseased regions.
 * **Low Resolution**: Compared to standard whole-slide images (WSIs) that typically offer 20k-30k pixel resolution, this dataset presented low-resolution constraints.
 * **Computational Bottlenecks**: Processing massive images sequentially made standard CNN/ViT fine-tuning unfeasibly slow for hyperparameter search.
